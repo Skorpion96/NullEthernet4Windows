@@ -1,0 +1,24 @@
+[Version]
+Signature="$Windows NT$"
+Class=System
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%ProviderName%
+DriverVer=01/01/2024,1.0.0.0
+
+[Manufacturer]
+%ManufacturerName%=MyModels,NTamd64
+
+[MyModels.NTamd64]
+%NullEthernet4Windows% = MyNullInstallSection, ACPI\NULE0000
+
+[MyNullInstallSection]
+; Typically this would have file copy or registry settings. We leave it empty for a "null" driver.
+
+[MyNullInstallSection.Services]
+; AddService would normally include a service name. We leave it blank here to simulate no service.
+AddService = ,2
+
+[Strings]
+ProviderName="LOL"
+ManufacturerName="LOL"
+NullEthernet4Windows="Null Ethernet Adapter for Windows"
