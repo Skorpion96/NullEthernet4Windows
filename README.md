@@ -1,4 +1,6 @@
 # NullEthernet4Windows
-A null driver for NullEthernet.kext from RehabMan https://github.com/RehabMan/OS-X-Null-Ethernet to make Windows recognize the device. It's pretty obvious that this is an empty driver to make the device be recognized, it does nothing
+A null driver for NullEthernet.kext from RehabMan https://github.com/RehabMan/OS-X-Null-Ethernet to make Windows recognize the device. 
 
-Disable driver signature enforcement, go on Device Management, locate the unrecognized device and install the inf on this repo.
+It's pretty obvious that this is an empty driver to make the device be recognized, it does nothing.
+
+To install: disable driver signature enforcement, go on Device Management, locate the unrecognized device and install the inf on this repo.
